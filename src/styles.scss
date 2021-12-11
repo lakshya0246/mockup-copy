@@ -1,15 +1,17 @@
 @import "./normalize.scss";
 
 :root {
-    --color-primary-text: rgb(223, 115, 0);
-    --color-primary: orange;
-    --color-primary-dark: rgb(230, 149, 0);
+    --color-text-primary: hsl(31, 100%, 44%);
+    --color-primary: hsl(39, 100%, 50%);
+    --color-primary-alpha-12: hsla(39, 100%, 50%, 0.12);
+    --color-primary-alpha-50: hsla(39, 100%, 50%, 0.5);
+    --color-primary-dark: hsl(39, 100%, 45%);
 
     --color-secondary: rgb(56, 126, 255);
     --border-radius-default: 12px;
 
-    --grey-1: #e5e5e5;
-    --grey-15: #d8d8d8;
+    --grey-1: hsl(0, 0%, 90%);
+    --grey-15: hsl(0, 0%, 85%);
     --grey-2: #cccccc;
     --grey-3: #b3b3b3;
     --grey-4: #999999;
@@ -20,8 +22,8 @@
     --grey-075: #ececec;
     --grey-05: #f2f2f2;
 
-    --text-muted: var(--grey-4);
-    --text-default: var(--grey-9);
+    --color-text-muted: var(--grey-4);
+    --color-text-default: var(--grey-7);
 }
 
 * {
@@ -31,4 +33,5 @@
 body {
     font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
+    color: var(--color-text-default);
 }

@@ -4,13 +4,12 @@
     width: 100%;
     height: 100%;
     justify-content: center;
-    border: 1px solid orange;
 }
 
 .container {
-    border: 1px solid red;
     display: grid;
     grid-template-columns: 180px 1fr 200px;
+    column-gap: 16px;
     width: 100vw;
     max-width: 1080px;
 }

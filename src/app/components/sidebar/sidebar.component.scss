@@ -1,0 +1,36 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.router-link {
+    display: flex;
+    text-decoration: none;
+    color: var(--text-default);
+    padding: 12px;
+    font-size: 13px;
+    font-weight: 500;
+    width: 100%;
+    border-left: 3px solid transparent;
+
+    &.active {
+        border-left-color: var(--color-primary-alpha-50);
+        color: var(--color-text-primary);
+        background: linear-gradient(90deg, var(--color-primary-alpha-12) 0%, white 50%);
+    }
+}
+
+.logo-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    margin-bottom: 16px;
+    & > img {
+        width: 140px;
+    }
+}
