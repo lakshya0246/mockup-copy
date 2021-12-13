@@ -2,6 +2,8 @@
 
 ## Known issues & improvements
 
+I've taken some liberty with the designs, so the reproduction is not 100% accurate.
+
 ### Known issues:
 
 **1. All components are loaded into memory on all screen sizes**
@@ -18,10 +20,12 @@ None of the card lists support pagination
 **5. Filters are not wired up**
 The filter UI for the card lists has not been implemented
 
-**5. Components do not accept data**
+**6. Notification count doesn't show up on mobile**
+
+**7. Components do not accept data**
 Due to time constraints, I didn't bother to add public APIs to most components and also since because is hard-coded.
 
-**5. Different notifications types do not have different visual variants/types**
+**8. Different notifications types do not have different visual variants/types**
 
 ### Improvements:
 
