@@ -7,7 +7,7 @@ I've taken some liberty with the designs, so the reproduction is not 100% accura
 ### Known issues:
 
 **1. All components are loaded into memory on all screen sizes**
-Some components are are not needed on mobile but are needed on desktop and vice-versa. However, they're only visually hidden.
+Some components are are not needed on mobile but are needed on desktop and vice-versa. However, they're only visually hidden using `display:none`.
 
 **2. Browser compatibility**
 Due to time constraints, I only tested it properly on Google Chrome.
@@ -23,14 +23,14 @@ The filter UI for the card lists has not been implemented
 **6. Notification count doesn't show up on mobile**
 
 **7. Components do not accept data**
-Due to time constraints, I didn't bother to add public APIs to most components and also since because is hard-coded.
+Due to time constraints, I didn't bother to add public APIs to most components and also since because data is hard-coded.
 
 **8. Different notifications types do not have different visual variants/types**
 
 ### Improvements:
 
-1. A generic directive or Higher-order-com can be created to add pagination where needed
-2. Collapsing and expanding of application card can be animated
+1. A generic directive or Higher-order-component can be created to add pagination where needed
+2. Collapsing and expanding of the applications card can be animated
 3. Abstraction of style elements in the form of mixins to allow extension and reduce duplication
 4. Better adherence to accessiblity standards in terms of document structure and element attributes
 
