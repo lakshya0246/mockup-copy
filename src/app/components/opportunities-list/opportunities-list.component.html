@@ -1,0 +1,28 @@
+<div class="opportunity-card" [ngClass]="{'disabled': opportunity.isUserInterested === false}"
+    *ngFor="let opportunity of opportunities; index as i; trackBy:opportunitiesTrackBy">
+
+    <div class="opportunity-card-header">
+
+        <p class="opportunity-card-title"><span class="company-name">{{opportunity.company}}</span> -
+            {{opportunity.title}} <app-icon *ngIf="opportunity.isTrending" [size]="18" name="zap" color="orange">
+            </app-icon>
+        </p>
+        <p class="opportunity-card-salary">{{opportunity.salary}}</p>
+    </div>
+
+
+    <div class="opportunity-card-stat-list">
+        <span class="stat-value">{{opportunity.startDate | date:'MMMM d'}}</span>
+        <span class="stat-name">• {{opportunity.jobType | titlecase}}</span>
+        <span class="stat-name">• {{opportunity.location | titlecase}}</span>
+    </div>
+
+    <div *ngIf="opportunity.isUserInterested !== false" class="action-buttons">
+        <button class="button-primary">
+            Apply
+        </button>
+        <button class="button-grey">
+            Not interested
+        </button>
+    </div>
+</div>

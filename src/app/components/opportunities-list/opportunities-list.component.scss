@@ -1,0 +1,63 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .opportunity-card {
+        margin-bottom: 12px;
+    }
+}
+
+.opportunity-card {
+    background: white;
+    border-radius: var(--border-radius-default);
+    width: 100%;
+    display: flex;
+    padding: 16px 24px;
+    flex-direction: column;
+
+    &.disabled {
+        opacity: 0.6;
+    }
+}
+
+.opportunity-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+}
+
+.opportunity-card-salary {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.opportunity-card-title {
+    font-size: 14px;
+    margin: 0;
+    app-icon {
+        margin-left: 4px;
+    }
+    .company-name {
+        font-weight: 700;
+    }
+}
+
+.opportunity-card-stat-list {
+    display: flex;
+    align-items: center;
+    & > span {
+        margin-right: 8px;
+    }
+}
+
+.action-buttons {
+    margin-top: 12px;
+    display: flex;
+    & button {
+        margin-right: 12px;
+    }
+}
