@@ -1,0 +1,29 @@
+<div class="application-card" [ngClass]="{'expanded': expandedCardIndex === i}" (click)="setExpandedCardIndex(i)"
+    *ngFor="let application of ongoingApplications; index as i; trackBy:applicationsTrackBy">
+
+    <div class="collapse-icon-container">
+        <app-icon name='chevron-down'></app-icon>
+    </div>
+    <p class="application-card-title"><span class="type">{{application.type}} -</span> {{application.company}} -
+        {{application.title}}</p>
+
+    <div class="application-card-stat-list">
+        <div>
+            <app-icon name="calendar"></app-icon>
+            <span>{{application.startDate | date:'MMMM d'}}</span>
+        </div>
+        <div>
+            <app-icon name="clock"></app-icon>
+            <span>{{application.startDate | date:'H:mm'}}</span>
+        </div>
+    </div>
+
+    <div class="application-card-content">
+        <span class="stat-name">Question Type</span>
+        <span class="stat-value">{{application.questionType}}</span>
+        <span class="stat-name">Duration</span>
+        <span class="stat-value">{{application.durationDisplay}}</span>
+        <span class="stat-name">Venue</span>
+        <span class="stat-value">{{application.venue}}</span>
+    </div>
+</div>
