@@ -1,11 +1,15 @@
 @import "./normalize.scss";
+@import "./app/styles/typography.scss";
+@import "./app/styles/layout.scss";
+@import "./app/styles/buttons.scss";
 
 :root {
     --color-text-primary: hsl(31, 100%, 44%);
-    --color-primary: hsl(39, 100%, 50%);
+    --color-primary: hsl(36, 100%, 46%);
     --color-primary-alpha-12: hsla(39, 100%, 50%, 0.12);
     --color-primary-alpha-50: hsla(39, 100%, 50%, 0.5);
     --color-primary-dark: hsl(39, 100%, 45%);
+    --color-danger: hsl(2, 64%, 50%);
 
     --color-secondary: rgb(56, 126, 255);
     --border-radius-default: 12px;

@@ -2,8 +2,24 @@
   <div>
     <app-sidebar></app-sidebar>
   </div>
-  <div>
+  <div class="middle-section">
     <app-user-details></app-user-details>
+    <h2 class="section-heading">Ongoing applications</h2>
+    <app-ongoing-applications-list></app-ongoing-applications-list>
+    <div class="section-header">
+      <div class="left">
+        <h2 class="section-heading">Ongoing applications</h2>
+      </div>
+      <div class="right">
+        <app-filter-tabs [tabs]="['Eligible', 'Hot', 'New']"></app-filter-tabs>
+      </div>
+    </div>
+    <app-opportunities-list></app-opportunities-list>
   </div>
-  <div></div>
+  <div>
+    <div class="notifications-container">
+      <h2 class="section-heading">Notifications</h2>
+      <app-notifications-list></app-notifications-list>
+    </div>
+  </div>
 </div>

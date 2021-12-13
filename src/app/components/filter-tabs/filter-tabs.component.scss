@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    align-items: center;
+}
+
+.tab {
+    cursor: pointer;
+    font-size: 13px;
+    opacity: 0.5;
+    padding: 6px 12px;
+    &.active {
+        opacity: 1;
+    }
+}

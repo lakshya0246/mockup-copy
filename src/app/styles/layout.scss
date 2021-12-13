@@ -1,0 +1,14 @@
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & > .left {
+        display: flex;
+    }
+
+    & > .right {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

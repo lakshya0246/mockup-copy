@@ -1,0 +1,36 @@
+@mixin button-base {
+    cursor: pointer;
+    position: relative;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+    line-height: normal;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 12px;
+}
+
+.button-primary {
+    @include button-base();
+    background: var(--color-primary);
+    color: white;
+
+    &:hover,
+    &:focus {
+        background: var(--color-primary-dark);
+    }
+}
+
+.button-grey {
+    @include button-base();
+    background: var(--grey-1);
+    color: var(--grey-5);
+
+    &:hover,
+    &:focus {
+        background: var(--grey-2);
+    }
+}
