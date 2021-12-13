@@ -1,0 +1,89 @@
+:host {
+    display: flex;
+    flex-direction: column;
+
+    .notification {
+        position: relative;
+        margin-bottom: 12px;
+
+        .connector-line {
+            position: absolute;
+            width: 1px;
+            background: var(--grey-05);
+            // compensate for margin and top offset
+            height: calc(100% - 8px);
+            left: 10px;
+            top: 20px;
+        }
+
+        &:last-of-type .connector-line {
+            display: none;
+        }
+    }
+}
+
+.notification-indicator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background: var(--color-primary-alpha-12);
+    flex-shrink: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background: var(--color-primary-alpha-50);
+        width: 4px;
+        height: 4px;
+        z-index: 2;
+        border-radius: 50px;
+    }
+}
+
+.notification {
+    display: flex;
+
+    .notification-indicator {
+        margin-right: 10px;
+    }
+}
+
+.notification-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-header {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 4px;
+    justify-content: space-between;
+    .notification-title {
+        display: flex;
+        flex: 2;
+        margin-right: 6px;
+    }
+}
+
+.notification-time-elapsed {
+    font-size: 11px;
+    color: var(--color-text-muted);
+}
+
+.notification-title {
+    font-size: 13px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.notification-description {
+    margin-top: 0;
+    font-size: 12px;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: var(--color-text-muted);
+}

@@ -1,0 +1,12 @@
+<div class="notification" [ngClass]="{'expanded': notification.type}"
+    *ngFor="let notification of notifications; index as i; trackBy:notificationsTrackBy">
+    <div class="connector-line"></div>
+    <div class="notification-indicator"></div>
+    <div class="notification-body">
+        <div class="notification-header">
+            <h3 class="notification-title">{{notification.title}}</h3>
+            <div class="notification-time-elapsed">{{getTimeElapsedInHours(notification.createdAt)}}</div>
+        </div>
+        <p class="notification-description">{{notification.description}}</p>
+    </div>
+</div>
