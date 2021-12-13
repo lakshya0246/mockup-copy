@@ -9,9 +9,22 @@ import { FilterTabsComponent } from './components/filter-tabs/filter-tabs.compon
 import { OpportunitiesListComponent } from './components/opportunities-list/opportunities-list.component';
 import { IconComponent } from './components/icon/icon.component';
 import { NotificationsListComponent } from './components/notifications-list/notifications-list.component';
+import { UserHighlightsComponent } from './components/user-highlights/user-highlights.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, UserDetailsComponent, SidebarComponent, OngoingApplicationsListComponent, FilterTabsComponent, OpportunitiesListComponent, IconComponent, NotificationsListComponent],
+  declarations: [
+    AppComponent,
+    UserDetailsComponent,
+    SidebarComponent,
+    OngoingApplicationsListComponent,
+    FilterTabsComponent,
+    OpportunitiesListComponent,
+    IconComponent,
+    NotificationsListComponent,
+    UserHighlightsComponent,
+    HeaderComponent,
+  ],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],

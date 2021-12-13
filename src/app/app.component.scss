@@ -20,10 +20,11 @@
     padding: 16px;
 }
 
-.middle-section {
+.middle-column {
     overflow-y: scroll;
 
     scrollbar-width: none;
+    padding-top: 12px;
 
     &::-webkit-scrollbar {
         display: none;
@@ -45,5 +46,64 @@
     app-user-details,
     app-ongoing-applications-list {
         margin-bottom: 42px;
+    }
+    app-user-highlights {
+        display: none;
+    }
+    app-header {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    :host {
+        display: block;
+        padding-bottom: 64px;
+        overflow-y: scroll;
+    }
+    .middle-column {
+        padding-top: 48px;
+        overflow-y: unset;
+        app-user-details,
+        app-filter-tabs {
+            display: none;
+        }
+
+        app-user-highlights {
+            display: grid;
+            margin-bottom: 42px;
+        }
+
+        app-header {
+            z-index: 10;
+            display: flex;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+    .container {
+        padding: 12px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .notifications-container {
+        border-radius: var(--border-radius-default);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 200px;
+    }
+    .left-column {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
     }
 }

@@ -42,3 +42,9 @@
         // justify-self: flex-end;
     }
 }
+
+@media (max-width: 960px) {
+    .stat-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

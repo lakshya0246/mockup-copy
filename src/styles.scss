@@ -3,12 +3,16 @@
 @import "./app/styles/layout.scss";
 @import "./app/styles/buttons.scss";
 
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
 :root {
     --color-text-primary: hsl(31, 100%, 44%);
     --color-primary: hsl(36, 100%, 46%);
     --color-primary-alpha-12: hsla(39, 100%, 50%, 0.12);
     --color-primary-alpha-50: hsla(39, 100%, 50%, 0.5);
-    --color-primary-dark: hsl(39, 100%, 45%);
+    --color-primary-dark: hsl(36, 100%, 38%);
     --color-danger: hsl(2, 64%, 50%);
 
     --color-secondary: rgb(56, 126, 255);

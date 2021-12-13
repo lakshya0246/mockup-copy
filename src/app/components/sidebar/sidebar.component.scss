@@ -7,9 +7,15 @@
 }
 
 .router-link {
+    app-icon {
+        height: 18px;
+        width: 18px;
+        margin-right: 6px;
+    }
     display: flex;
     text-decoration: none;
-    color: var(--text-default);
+    align-items: center;
+    color: var(--color-text-default);
     padding: 12px;
     font-size: 13px;
     font-weight: 500;
@@ -32,5 +38,51 @@
     margin-bottom: 16px;
     & > img {
         width: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    :host {
+        flex-direction: row;
+        background: var(--color-primary);
+        padding: 12px;
+        border-radius: var(--border-radius-default) var(--border-radius-default) 0 0;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .router-link {
+        justify-self: center;
+        align-self: center;
+        justify-content: center;
+        color: white;
+        border: hidden;
+        padding: 6px 8px;
+
+        app-icon {
+            height: 24px;
+            width: 24px;
+            margin-right: 0;
+        }
+
+        & > span {
+            display: none;
+        }
+
+        &.active {
+            background: white;
+            border-radius: 50px;
+            color: var(--color-text-primary);
+            app-icon {
+                height: 20px;
+                width: 20px;
+                margin-right: 6px;
+            }
+            span {
+                display: inline-block;
+            }
+        }
     }
 }

@@ -1,8 +1,10 @@
 <div class="container">
-  <div>
+  <div class="left-column">
     <app-sidebar></app-sidebar>
   </div>
-  <div class="middle-section">
+  <div class="middle-column">
+    <app-header></app-header>
+    <app-user-highlights></app-user-highlights>
     <app-user-details></app-user-details>
     <h2 class="section-heading">Ongoing applications</h2>
     <app-ongoing-applications-list></app-ongoing-applications-list>
@@ -16,7 +18,7 @@
     </div>
     <app-opportunities-list></app-opportunities-list>
   </div>
-  <div>
+  <div class="right-column">
     <div class="notifications-container">
       <h2 class="section-heading">Notifications</h2>
       <app-notifications-list></app-notifications-list>
