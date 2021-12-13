@@ -1,5 +1,35 @@
 # MockupCopy
 
+## Known issues & improvements
+
+### Known issues:
+
+**1. All components are loaded into memory on all screen sizes**
+Some components are are not needed on mobile but are needed on desktop and vice-versa. However, they're only visually hidden.
+
+**2. Browser compatibility**
+Due to time constraints, I only tested it properly on Google Chrome.
+
+**3. Pagination is not implemented**
+None of the card lists support pagination
+
+**4. Angular routing not integrated**
+
+**5. Filters are not wired up**
+The filter UI for the card lists has not been implemented
+
+**5. Components do not accept data**
+Due to time constraints, I didn't bother to add public APIs to most components and also since because is hard-coded.
+
+**5. Different notifications types do not have different visual variants/types**
+
+### Improvements:
+
+1. A generic directive or Higher-order-com can be created to add pagination where needed
+2. Collapsing and expanding of application card can be animated
+3. Abstraction of style elements in the form of mixins to allow extension and reduce duplication
+4. Better adherence to accessiblity standards in terms of document structure and element attributes
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.3.
 
 ## Development server
